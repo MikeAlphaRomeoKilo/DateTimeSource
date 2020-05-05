@@ -8,7 +8,7 @@ TestableDateTimeSource is designed for use in unit tests.  It allows the test to
 
 The library is written in C# and targets .NET Standard 2.0
 
-## Exaple use of DateTimeSource
+## Example use of DateTimeSource
     class Program
     {
         static void Main( string[] args )
