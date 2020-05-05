@@ -12,6 +12,7 @@
     <Description>Provides an interface containing Now() and UtcNow(), and two implementation classes.  One is a wrapper for DateTime.  The other is for use in unit tests, and returns a DateTime value supplied by the test.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>IDateTimeSource;DateTimeSource;TestableDateTimeSource</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
