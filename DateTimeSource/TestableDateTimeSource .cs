@@ -2,11 +2,18 @@
 
 namespace MW.TestableDateTime
 {
+    /// <summary>
+    /// An implementation of IDateTimeSource that for use in unit tests.
+    /// </summary>
     public class TestableDateTimeSource : IDateTimeSource
     {
         private readonly DateTime _dateTimeNow;
         private readonly DateTime _dateTimeNowUtc;
 
+        /// <summary>
+        /// A constructor that accepts the DateTime value to return.  The parameter can be in either 
+        /// </summary>
+        /// <param name="source">The value to return.  It can be either DateTimeKind.Utc or DateTimeKind.Local</param>
         public TestableDateTimeSource( DateTime source )
         {
             if( source.Kind == DateTimeKind.Utc )

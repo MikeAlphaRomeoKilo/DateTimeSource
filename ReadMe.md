@@ -1,8 +1,10 @@
-# Mw String Utilities
+# Mw DateTimeSource
 ## Overview
-This library contains string utility functions which, along with their unit tests, 
-I seem to end up writing in too many projects.  Since I have better things to do with my time, I've 
-created this library to save myself future effort.
+The .NET DateTime class presents certain difficulties in unit tests.  This library provides an IDateTimeSource interface, which contains two functions, Now() and UtcNow(), both of which return a DateTime object.  Two implementations of this interface are provided, DateTimeSource and TestableDateTime source.
+
+DateTimeSource is a simple wrapper around DateTiime's Now() and UtcNow() functions.
+
+TestableDateTimeSource is designed for use in unit tests.  It allows the test to specify the DateTime object that will be returned.
 
 The library is written in C# and targets .NET Standard 2.0
 ## Functions
