@@ -1,10 +1,10 @@
 # Mw DateTimeSource
 ## Overview
-The .NET DateTime class presents certain difficulties in unit tests.  This library provides an IDateTimeSource interface, which contains two functions, Now() and UtcNow(), both of which return a DateTime object.  Two implementations of this interface are provided, DateTimeSource and TestableDateTime source.
+The .NET DateTime class presents certain difficulties in unit tests.  This library provides an **IDateTimeSource interface**, which contains two functions, **Now()** and **UtcNow()**, both of which return a DateTime object.  Two implementations of this interface are provided, DateTimeSource and TestableDateTime source.
 
-DateTimeSource is a simple wrapper around DateTiime's Now() and UtcNow() functions.
+**DateTimeSource** is a simple wrapper around DateTiime's Now() and UtcNow() functions.
 
-TestableDateTimeSource is designed for use in unit tests.  It allows the test to specify the DateTime object that will be returned.
+**TestableDateTimeSource** is designed for use in unit tests.  It allows the test to specify the DateTime object that will be returned.
 
 The library is written in C# and targets .NET Standard 2.0
 
