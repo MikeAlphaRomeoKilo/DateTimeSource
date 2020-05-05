@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>MW.DateTimeSource</PackageId>
+    <Authors>Mark Willis</Authors>
+    <Company />
+    <Product>DateTimeSource</Product>
+    <Copyright>Copyright (c) 2020 Mark Willis</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/MikeAlphaRomeoKilo/DateTimeSource</PackageProjectUrl>
+    <Description>Provides an interface containing Now() and UtcNow(), and two implementation classes.  One is a wrapper for DateTime.  The other is for use in unit tests, and returns a DateTime value supplied by the test.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
